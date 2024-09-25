@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-rgb: 25, 25, 35;
+  --foreground-rgb: 255, 255, 255;
+  --primary-orange: 255, 121, 0;
+  --secondary-yellow: 255, 217, 0;
+  --accent-blue: 0, 195, 255;
+  --accent-pink: 255, 0, 128;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background: rgb(var(--background-rgb));
+  color: rgb(var(--foreground-rgb));
+  font-family: 'Merriweather', serif;
+}
+
+.neon-text {
+  text-shadow: 0 0 10px rgba(var(--primary-orange), 0.8),
+    0 0 20px rgba(var(--primary-orange), 0.8),
+    0 0 30px rgba(var(--primary-orange), 0.8);
+}
+
+.retro-future-box {
+  background: linear-gradient(45deg,
+      rgba(var(--primary-orange), 0.7),
+      rgba(var(--secondary-yellow), 0.7));
+  border: 2px solid rgb(var(--accent-blue));
+  box-shadow: 0 0 15px rgba(var(--accent-blue), 0.5);
+}
+
+.button-primary {
+  background-color: rgb(var(--primary-orange));
+  color: rgb(var(--foreground-rgb));
+  border: 2px solid rgb(var(--accent-pink));
+  transition: all 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: rgb(var(--accent-pink));
+  box-shadow: 0 0 15px rgba(var(--accent-pink), 0.8);
+}
