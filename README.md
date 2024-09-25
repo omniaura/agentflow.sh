@@ -1,4 +1,5 @@
 # SolidStart
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2dd66d72-b049-4370-90ee-e16ac5a0f9e5/deploy-status)](https://app.netlify.com/sites/agentflowai/deploys)
 
 Everything you need to build a Solid project, powered by [`solid-start`](https://start.solidjs.com);
 
